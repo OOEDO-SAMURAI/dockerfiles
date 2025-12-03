@@ -17,7 +17,8 @@ WORKDIR $OOEDO_STM32_DRIVER_PATH
 
 RUN git clone https://github.com/STMicroelectronics/cmsis-core.git -b v5.6.0_cm7 && \
     git clone https://github.com/STMicroelectronics/cmsis-device-h7.git -b v1.10.5 && \
-    git clone https://github.com/STMicroelectronics/stm32h7xx-hal-driver.git -b v1.11.4
+    git clone https://github.com/STMicroelectronics/stm32h7xx-hal-driver.git -b v1.11.4 && \
+    git clone https://github.com/STMicroelectronics/stm32-mw-usb-device.git -b v2.11.3
 
 RUN apt-get autoremove -y && \
     apt-get clean && \
